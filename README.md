@@ -3,7 +3,8 @@
 <p>Exercício em grupo sobre o uso de Api para desenvolvimento back end. Os seguintes membros formam o grupo de colaboradores: </p>
 <br>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <a href="https://github.com/StaticDreamstate/"><li>Yuri</li></a>
+  <a href="https://github.com/Tabitha-Silva98"><li>Tabitha</li></a>
+  <a href="https://github.com/EmersonSEP"><li>Emerson</li></a>
+  <a href="https://github.com/jonathan-wanderley"><li>Jonathan</li></a>
 </ul>
