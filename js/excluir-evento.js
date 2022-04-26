@@ -29,7 +29,6 @@ btnExcluir.addEventListener("click", async (event) => {
       alert("O evento foi deletado de forma permanente.");
 
     } catch (error) {
-      console.error("erro na deleção.Causa do erro: ", error);
       alert("Erro ao deletar o evento.");
     }
   }
