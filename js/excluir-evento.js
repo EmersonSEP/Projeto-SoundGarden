@@ -20,7 +20,7 @@ btnExcluir.addEventListener("click", async (event) => {
   if (eventoId) {
 
     try {
-      await fetch(`${API_URL}/${id}`, {
+      await fetch(`${API_URL}/${eventoId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
