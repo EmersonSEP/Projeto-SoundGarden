@@ -19,9 +19,6 @@ btnExcluir.addEventListener("click", async (event) => {
 
   if (eventoId) {
 
-    const id = (new URL(document.location)).searchParams.get("id");
-    console.log(id);
-
     try {
       await fetch(`${API_URL}/${id}`, {
         method: "DELETE",
