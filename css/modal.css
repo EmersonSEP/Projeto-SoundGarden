@@ -12,7 +12,7 @@
 .modal-window {
     position: relative;
     width: 340px;
-    /* height: 300px; */
+    margin: 10px;
     background-color: #fff;
     padding: 30px;
     display: flex;
@@ -24,6 +24,8 @@
 }
 .modal-window p {
     font-size: 19px;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 .modal-window input {
     padding: 5px 10px;
@@ -50,4 +52,50 @@
 }
 .modal-window span:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    #divEventos.d-flex {
+    flex-direction: column !important;
+    }
+    .col > img {
+        width: 100% !important;
+    }
+    footer nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    main > section:nth-child(3) > div > div > div:nth-child(1) {
+        text-align: center;
+    }
+    main > section.full.d-flex.justify-content-center.align-items-center > div > div > div:nth-child(1) {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    article.evento {
+        width: 100%;
+    }
+    footer {
+        padding: 20px 0;
+    }
+    footer > div {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    footer > div nav ul {
+        padding: 0 !important;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 301px) {
+    header img {
+        width: 100%;
+    }
 }

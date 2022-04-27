@@ -1,0 +1,37 @@
+@media screen and (max-width: 945px) {
+    .p-5 {
+        padding: 4.5rem 2rem !important;
+    }
+    main {
+        text-align: center;
+    }
+    main div form {
+        width: 100% !important;
+        text-align: center !important;
+    }
+    main div form input {
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+    main div form textarea {
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+    main div form button {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .p-5 {
+        padding: 5.1rem 2rem !important;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    main div form button {
+        width: 100%;
+    }
+}

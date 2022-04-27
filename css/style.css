@@ -48,3 +48,44 @@ footer nav ul{
 footer nav ul li  {
     padding: 10px;
 }
+
+.row aside a svg {
+    display: none;
+}
+
+@media screen and (min-width: 946px) and (max-width: 1150px) {
+    .row aside img {
+        width: 80px !important;
+        height: auto !important;
+    }
+}
+@media screen and (max-width: 945px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .row aside {
+        width: 100vw;
+        margin-bottom: -320px;
+    }
+    .row aside img {
+        width: 80px;
+        height: auto;
+    }
+    .row aside a {
+        margin: 0 auto;
+    }
+    .row aside a svg {
+        display: none;
+    }
+    .row aside ul {
+        margin-bottom: 0 !important;
+        text-align: center;
+    }
+    main {
+        width: 100vw !important;
+    }
+    /* .p-5 {
+        padding: 1.8rem 1.2rem!important;
+    } */
+}
