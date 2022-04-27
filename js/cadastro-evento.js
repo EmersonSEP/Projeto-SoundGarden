@@ -26,12 +26,14 @@ btnEnviar.addEventListener("click", async (event) => {
       method: "POST",
       body: JSON.stringify(eventoBody),
       headers: {
+        Accept: "application/json",
         "Content-Type": "application/json",
       },
     };
   
    await fetch(`${API_URL}`, header);
    window.alert("Novo evento adicionado.");
+   window.location.replace("admin.html");
     
     } catch (error) {
       window.alert("Falha ao cadastrar evento.");

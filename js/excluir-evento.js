@@ -1,6 +1,3 @@
-//excluir-eventos.js
-
-const API_URL = "https://xp41-soundgarden-api.herokuapp.com/events";
 
 const eventoNome = document.getElementById("nome");
 const eventoAtracoes = document.getElementById("atracoes");
@@ -23,10 +20,12 @@ btnExcluir.addEventListener("click", async (event) => {
       await fetch(`${API_URL}/${eventoId}`, {
         method: "DELETE",
         headers: {
+          Accept: "application/json",
           "Content-Type": "application/json",
         },
       })
       alert("O evento foi deletado de forma permanente.");
+      window.location.replace("admin.html");
 
     } catch (error) {
       alert("Erro ao deletar o evento.");

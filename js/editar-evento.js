@@ -1,8 +1,8 @@
-const API_URL = "https://xp41-soundgarden-api.herokuapp.com/events";
+
 
 const eventoNome = document.getElementById("nome");
+const eventoBanner = document.getElementById("banner");
 const eventoAtracoes = document.getElementById("atracoes");
-const novasAtracoes = eventoAtracoes.value.split(",");
 const eventoDescricao = document.getElementById("descricao");
 const eventoDataHora = document.getElementById("data");
 const eventoLotacao = document.getElementById("lotacao");
@@ -17,8 +17,8 @@ btnEnviar.addEventListener("click", async (event) => {
 
     const eventoBody = {
       "name": eventoNome.value,
-      "poster": "https://picsum.photos/300",
-      "attractions": novasAtracoes,
+      "poster": eventoBanner.value,
+      "attractions": eventoAtracoes.value.split(","),
       "description": eventoDescricao.value,
       "scheduled": eventoDataHora.value,
       "number_tickets": eventoLotacao.value,
@@ -40,7 +40,7 @@ btnEnviar.addEventListener("click", async (event) => {
               window.location.replace("admin.html");
             })   
         }  catch (error) {
-          console.log(error.message);
+          alert("Falha ao editar as informações do evento.");;
       }
 
     }
