@@ -8,3 +8,5 @@
   <a href="https://github.com/EmersonSEP"><li>Emerson</li></a>
   <a href="https://github.com/jonathan-wanderley"><li>Jonathan</li></a>
 </ul>
+
+<a href="https://staticdreamstate.github.io/XP42-HandsOn2">Github Pages</a> 
