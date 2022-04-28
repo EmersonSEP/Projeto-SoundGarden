@@ -16,7 +16,7 @@ btnEnviar.addEventListener("click", async (event) => {
     event.preventDefault();
 
     if (eventoBanner.value === "") {
-      eventoBanner.value = "https://coopedu.com.br/wp-content/themes/coopedu/images/no-image-found-360x250.png";
+      eventoBanner.value = "../img/Sound-no-image-found.png";
     }
 
     const eventoBody = {
