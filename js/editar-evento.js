@@ -15,6 +15,10 @@ btnEnviar.addEventListener("click", async (event) => {
   
     event.preventDefault();
 
+    if (eventoBanner.value === "") {
+      eventoBanner.value = "https://coopedu.com.br/wp-content/themes/coopedu/images/no-image-found-360x250.png";
+    }
+
     const eventoBody = {
       "name": eventoNome.value,
       "poster": eventoBanner.value,
@@ -37,7 +41,7 @@ btnEnviar.addEventListener("click", async (event) => {
           })
             .then(() => {
               alert("Evento atualizado com sucesso");
-              window.location.replace("admin.html");
+              //window.location.replace("admin.html");
             })   
         }  catch (error) {
           alert("Falha ao editar as informações do evento.");;
