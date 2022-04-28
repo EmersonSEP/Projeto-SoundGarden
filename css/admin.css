@@ -30,6 +30,7 @@
 }
 .divTable {
     height: 400px;
+    overflow-y: auto;
 }
 .modalJanela .modalTable thead th {
     padding: 10px 0 10px 5px;
