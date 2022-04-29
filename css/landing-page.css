@@ -66,6 +66,12 @@
         display: flex;
         flex-direction: column;
     }
+
+    #id {
+        margin-left: 5%;
+        width:95%;
+        height:95%;
+    }
     
 }
 
@@ -76,6 +82,13 @@
     main > section.full.d-flex.justify-content-center.align-items-center > div > div > div:nth-child(1) {
         text-align: center;
     }
+
+    #id {
+        margin-left: 5%;
+        width:90%;
+        height:90%;
+    }
+
 }
 
 @media screen and (max-width: 380px) {
@@ -93,9 +106,22 @@
         padding: 0 !important;
         text-align: center;
     }
+
+    #id {
+        margin-left: 5%;
+        width:90%;
+        height:90%;
+    }
+
 }
 @media screen and (max-width: 301px) {
     header img {
         width: 100%;
     }
+
+   #id {
+       margin-left: 5%;
+       width:90%;
+       height:90%;
+   }
 }
